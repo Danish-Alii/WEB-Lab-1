@@ -55,3 +55,37 @@
 footer .direct{
 	direction: rtl;
 }
+.animation{
+	width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: myfirst 5s 2;
+    animation-direction: alternate;
+    padding:20px;
+}
+@keyframes myfirst {
+    0%{
+    	background: blue; 
+    	left: 0px; top: 0px;
+    }
+    25%{
+    	background: yellow;
+    	left:200px; top:-50px;
+    }
+    50%{
+    	background: red; 
+    	top:-100px;
+    	left:1000px;
+    	
+    }
+    75%{
+    	background: green; 
+    	left:200px; top: 100px;
+    }
+
+    100% {
+    	background: blue; 
+    	left: 0px; top:-900px;
+    }
+}
